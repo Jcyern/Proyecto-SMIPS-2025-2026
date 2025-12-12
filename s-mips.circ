@@ -46,7 +46,7 @@
       <a name="facing" val="south"/>
     </tool>
     <tool name="Tunnel">
-      <a name="facing" val="east"/>
+      <a name="facing" val="north"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -118,7 +118,7 @@
       <a name="select" val="2"/>
     </tool>
     <tool name="Priority Encoder">
-      <a name="select" val="1"/>
+      <a name="facing" val="north"/>
     </tool>
   </lib>
   <lib desc="#Arithmetic" name="3">
@@ -152,7 +152,7 @@
       <a name="trigger" val="falling"/>
     </tool>
     <tool name="Register">
-      <a name="width" val="12"/>
+      <a name="width" val="32"/>
     </tool>
     <tool name="Counter">
       <a name="width" val="32"/>
@@ -183,7 +183,8 @@
   <lib desc="file#/home/juanca/Documentos/2 Year/Arquitectura de Computadoras/Proyecto-SMIPS-2025-2026/Componentes/INVERTER/INVERTER.circ" name="11"/>
   <lib desc="file#/home/juanca/Documentos/2 Year/Arquitectura de Computadoras/Proyecto-SMIPS-2025-2026/Componentes/CACHE/CACHE.circ" name="12"/>
   <lib desc="file#/home/juanca/Documentos/2 Year/Arquitectura de Computadoras/Proyecto-SMIPS-2025-2026/Componentes/Register File/Register File.circ" name="13"/>
-  <lib desc="file#/home/juanca/Documentos/2 Year/Arquitectura de Computadoras/Proyecto-SMIPS-2025-2026/Componentes/StackPointer/STACKPOINTER.circ" name="14"/>
+  <lib desc="file#/home/juanca/Documentos/2 Year/Arquitectura de Computadoras/Proyecto-SMIPS-2025-2026/Componentes/Control Unit/Control Unit.circ" name="14"/>
+  <lib desc="file#/home/juanca/Documentos/2 Year/Arquitectura de Computadoras/Proyecto-SMIPS-2025-2026/Componentes/StackPointer/STACKPOINTER.circ" name="15"/>
   <main name="S-MIPS Board"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -2260,7 +2261,6 @@
       <a name="facing" val="east"/>
       <a name="label" val="KBD AVAIL"/>
     </comp>
-    <comp lib="12" loc="(670,790)" name="CACHE"/>
     <comp lib="6" loc="(1089,101)" name="Text">
       <a name="text" val="KEYBOARD"/>
       <a name="font" val="SansSerif plain 20"/>
@@ -2482,6 +2482,7 @@
       <a name="width" val="32"/>
       <a name="label" val="SP"/>
     </comp>
+    <comp lib="12" loc="(670,790)" name="CACHE"/>
     <comp lib="6" loc="(677,62)" name="Text">
       <a name="text" val="OUTPUTS-RAM"/>
       <a name="font" val="Dialog bolditalic 20"/>
